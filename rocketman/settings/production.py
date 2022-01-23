@@ -13,7 +13,7 @@ CACHES = {
     }
 }
 
-DATABASES = [
+DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "rocketman",
@@ -22,7 +22,7 @@ DATABASES = [
         "HOST": "localhost",
         "PORT": "",
     }
-]
+}
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
